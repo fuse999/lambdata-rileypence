@@ -5,9 +5,6 @@ lambdata-rileypence - A colection Of basic functions
 import pandas as pd
 import numpy as np
 
-from pyspark.sql.functions import *
-from pyspark.sql.types import *
-
 from sklearn.model_selection import train_test_split
 
 # Sample Dataset
@@ -19,14 +16,6 @@ def read_view_csv(url):
     df = pd.read_csv(url)
     print(df.head(5))
     return(df)
-
-def splitUDF(row):
-    if "/" in row:
-        mm,dd,yyyy = row.split("/")
-    elif "-" in row:
-        yyyy,mm,dd = row.split("-")
-
-    return [yyyy,mm,dd]
 
 def cust_split(X):
     train, test = train_test_split(X,test_size=0.2, random_state=59)
