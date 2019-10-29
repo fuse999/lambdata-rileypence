@@ -11,9 +11,9 @@ REQUIRED = [
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
     setuptools.setup(
-    name="lambdata-YOURUSERNAME!!!",
+    name="lambdata-rileypence",
     version = "0.1.1",
-    author = "YOURUSERNAME!!!",
+    author = "rileypence",
     description = "a collection of data science helper functions",
     long_description = LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
