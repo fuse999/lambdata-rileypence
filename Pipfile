@@ -12,6 +12,7 @@ pandas = "*"
 pyspark = "*"
 sklearn = "*"
 twine = "*"
+unittest = "*"
 
 [requires]
 python_version = "3.7"
